@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skills-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.skills-card {
+  background-color: #1f2937;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.skill-icon {
+  font-size: 1.5rem;
+  color: #ffd700;
+}
+
+.skill-level {
+  background-color: #536dfe;
+}
+
+h2,
+h3 {
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  color: #d7b004;
+}

@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contact-section {
+  background-color: #111827;
+  color: #fff;
+  position: relative;
+}
+
+.form-group {
+  position: relative;
+}
+
+input,
+textarea {
+  background-color: #1f2937;
+  border-color: #4b5563;
+  color: #d1d5db;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ffd700;
+  box-shadow: 0 0 0 2px #ffd700;
+}
+
+label {
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:focus + label,
+textarea:not(:placeholder-shown) + label {
+  transform: translateY(-1.5rem);
+  font-size: 0.75rem;
+  color: #ffd700;
+}
+
+button {
+  background-color: #ffd700;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #e6b800;
+  transform: scale(1.05);
+}
+
+.alert {
+  width: 90%;
+  max-width: 400px;
+}

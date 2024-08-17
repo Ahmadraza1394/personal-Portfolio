@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.unique-info-section {
+  background-color: #111827;
+  color: #fff;
+  padding: 2rem;
+}
+
+.unique-info-section h2 {
+  color: #ffd700;
+}
+
+.unique-info-section p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.unique-info-section .flex {
+  margin-top: 1.5rem;
+}
+
+.unique-info-section a {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.unique-info-section a:hover {
+  transform: scale(1.1);
+}
+
+i {
+  font-size: 1.5rem;
+}
