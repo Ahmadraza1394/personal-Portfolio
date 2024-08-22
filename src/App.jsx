@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import "./App.css";
 import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
@@ -14,8 +14,10 @@ import { motion, useAnimation, useScroll, useSpring } from "framer-motion";
 import Testimonial from "./components/Testimonial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Loader from "./components/Loader";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true);
   const projectsRef = useRef(null);
   const controls = useAnimation();
   const { scrollYProgress } = useScroll();
@@ -35,6 +37,13 @@ function App() {
       y: 0,
       transition: { delay: i * 0.3, duration: 0.8, ease: "easeOut" },
     }));
+
+    // Simulate loading time
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1800);
+
+    return () => clearTimeout(timer);
   }, [controls]);
 
   const sectionVariants = {
@@ -49,6 +58,10 @@ function App() {
       },
     },
   };
+
+  if (isLoading) {
+    return <Loader />;
+  }
 
   return (
     <div className="App">
