@@ -300,7 +300,7 @@ const JsTutorial = () => {
     <div className="flex flex-col md:flex-row min-h-screen bg-gray-900 text-white">
       {/* Sidebar */}
       <div className="w-full md:w-1/4 bg-gray-800 p-4">
-        <h2 className="text-2xl font-bold mb-4 text-yellow-500">
+        <h2 className="text-2xl font-bold mb-4 text-green-500">
           JavaScript Topics
         </h2>
         <ul className="space-y-2">
@@ -309,8 +309,8 @@ const JsTutorial = () => {
               key={topic.id}
               className={`cursor-pointer p-2 rounded-md transition-colors duration-200 ${
                 selectedTopic === topic.id
-                  ? "bg-yellow-600 text-white"
-                  : "bg-gray-700 hover:bg-yellow-600 hover:text-white"
+                  ? "bg-green-600 text-white"
+                  : "bg-gray-700 hover:bg-green-600 hover:text-white"
               }`}
               onClick={() => setSelectedTopic(topic.id)}
             >
@@ -324,11 +324,11 @@ const JsTutorial = () => {
       <div className="w-full md:w-3/4 p-8">
         {selectedTopic && jsTopics[selectedTopic - 1] ? (
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-yellow-500">
+            <h2 className="text-3xl font-bold mb-6 text-green-500">
               {jsTopics[selectedTopic - 1].title}
             </h2>
             <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">
+              <h3 className="text-xl font-semibold mb-2 text-green-400">
                 What is it?
               </h3>
               <p className="text-gray-300">
@@ -336,7 +336,7 @@ const JsTutorial = () => {
               </p>
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">
+              <h3 className="text-xl font-semibold mb-2 text-green-400">
                 How to write it:
               </h3>
               <pre className="bg-gray-800 p-4 rounded-md overflow-x-auto">
@@ -346,7 +346,7 @@ const JsTutorial = () => {
               </pre>
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">
+              <h3 className="text-xl font-semibold mb-2 text-green-400">
                 Here's an example:
               </h3>
               <pre className="bg-gray-800 p-4 rounded-md overflow-x-auto">
@@ -356,7 +356,7 @@ const JsTutorial = () => {
               </pre>
             </div>
             <div className="mb-6">
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">
+              <h3 className="text-xl font-semibold mb-2 text-green-400">
                 Output:
               </h3>
               <div className="bg-white text-black p-4 rounded-md">
@@ -364,8 +364,8 @@ const JsTutorial = () => {
               </div>
             </div>
             <div>
-              <h3 className="text-xl font-semibold mb-2 text-yellow-400">
-                Let's break it down:
+              <h3 className="text-xl font-semibold mb-2 text-green-400">
+                Let&apos;s break it down:
               </h3>
               <p className="text-gray-300">
                 {jsTopics[selectedTopic - 1].explanation}

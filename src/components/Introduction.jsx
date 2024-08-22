@@ -36,7 +36,7 @@ const Introduction = ({ scrollToProjects }) => {
         </h1>
         <button
           onClick={scrollToProjects}
-          className="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-md transition duration-300"
+          className="px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-md transition duration-300"
         >
           Explore My Work
         </button>

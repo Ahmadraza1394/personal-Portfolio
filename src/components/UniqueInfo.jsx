@@ -4,7 +4,7 @@ const UniqueInfo = () => {
   return (
     <section className="unique-info-section p-8 bg-gray-900 text-white">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-yellow-600">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-600">
           More About Me
         </h2>
         <p className="mb-4 text-2xl font-semibold">
@@ -47,6 +47,14 @@ const UniqueInfo = () => {
             className="text-blue-500 hover:text-blue-900 transform hover:scale-110 transition duration-300"
           >
             <i className="fab fa-linkedin w-6 h-6"></i>
+          </a>
+          <a
+            href="https://www.fiverr.com/s/LdB19pY"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:text-gray-200 transform hover:scale-110 transition duration-300"
+          >
+            <img src="./images/Fiverr.jpg" alt="Fiverr" className="w-6 h-6" />
           </a>
         </div>
       </div>

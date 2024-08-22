@@ -30,7 +30,7 @@ const TeachHtml = () => {
     <Router>
       <section id="teach" className="teach-section p-8 bg-black text-white">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-yellow-500">
+          <h2 className="text-3xl md:text-4xl font-bold mb-2 text-center text-green-500">
             Learn HTML, CSS, and JavaScript
           </h2>
           <p className="text-lg mb-6 text-center text-gray-300">
@@ -41,7 +41,7 @@ const TeachHtml = () => {
               <h3 className="text-xl font-semibold">HTML</h3>
               <button
                 onClick={() => handleTutorialSelection("html")}
-                className="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-md transition duration-300"
+                className="px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-md transition duration-300"
               >
                 {selectedTutorial === "html"
                   ? "Hide Tutorial"
@@ -52,7 +52,7 @@ const TeachHtml = () => {
               <h3 className="text-xl font-semibold">CSS</h3>
               <button
                 onClick={() => handleTutorialSelection("css")}
-                className="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-md transition duration-300"
+                className="px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-md transition duration-300"
               >
                 {selectedTutorial === "css"
                   ? "Hide Tutorial"
@@ -63,7 +63,7 @@ const TeachHtml = () => {
               <h3 className="text-xl font-semibold">JavaScript</h3>
               <button
                 onClick={() => handleTutorialSelection("javascript")}
-                className="px-4 py-2 bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-md transition duration-300"
+                className="px-4 py-2 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-md transition duration-300"
               >
                 {selectedTutorial === "javascript"
                   ? "Hide Tutorial"

@@ -50,11 +50,11 @@ const ContactForm = () => {
       )}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 items-center ">
         <div className="hidden lg:block">
-          <i className="fas fa-envelope fa-3x text-yellow-500 pulsate-bck"></i>
+          <i className="fas fa-envelope fa-3x text-green-500 pulsate-bck"></i>
           <img src={img} alt="Contact Us" className="rounded-lg shadow-md " />
         </div>
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center text-yellow-500">
+          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center text-green-500">
             Contact Me
           </h2>
           <form ref={form} onSubmit={sendEmail} className="space-y-6">
@@ -113,7 +113,7 @@ const ContactForm = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="px-6 py-3 bg-yellow-600 hover:bg-yellow-500 text-white font-semibold rounded-md transition duration-300 transform hover:scale-105"
+                className="px-6 py-3 bg-green-600 hover:bg-green-500 text-white font-semibold rounded-md transition duration-300 transform hover:scale-105"
               >
                 Send Message
               </button>
