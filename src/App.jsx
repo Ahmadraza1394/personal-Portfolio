@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import "./App.css";
 import Introduction from "./components/Introduction";
-import Skills from "./components/Skills";
+
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import UniqueInfo from "./components/UniqueInfo";
@@ -15,6 +15,8 @@ import Testimonial from "./components/Testimonial";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Loader from "./components/Loader";
+import Tools from "./components/Tools";
+import Services from "./components/Services";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -41,7 +43,7 @@ function App() {
     // Simulate loading time
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1800);
+    }, 2000);
 
     return () => clearTimeout(timer);
   }, [controls]);
@@ -74,25 +76,36 @@ function App() {
       >
         <Introduction scrollToProjects={scrollToProjects} />
       </motion.div>
-      <hr />
+      {/* <hr /> */}
 
-      <Skills />
+      {/* <Skills /> */}
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
 
-      <hr />
-
-      <Projects />
-      <hr />
+      <Tools />
+      {/* <hr /> */}
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+      {/* <hr /> */}
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
 
       <Testimonial />
 
-      <hr />
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
 
       <TeachHtml />
 
-      <hr />
+      {/* <hr /> */}
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
+
+      <Services />
+      {/* <hr /> */}
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
 
       <ContactForm />
 
+      <div className="h-px bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
       {/* <hr /> */}
 
       <UniqueInfo />
